@@ -1,0 +1,35 @@
+body{
+    background-color: #000000ff;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-size: contain;
+    scroll-behavior: smooth;
+    color: #ffffffff;
+}
+header, footer, main{
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+}
+header, footer{
+    position: fixed;
+    margin: 0 10px;
+}
+header{
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+header>div{
+    text-align: center;
+}
+main{
+    display: flex;
+    margin: 20px 10px 10px;
+}
+footer{
+    bottom: 0;
+}
