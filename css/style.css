@@ -44,6 +44,7 @@ a{
 small{
 	font-size: smaller;
 }
+
 /*tags*/
 body{
 	background-color: #000000ff;
@@ -53,6 +54,7 @@ body{
 	background-position-y: center;
 	background-attachment: fixed;
 	background-size: contain;
+	
 	scroll-behavior: smooth;
 	color: #ffffffff;
 }
@@ -79,8 +81,6 @@ header>div{
 main{
 	display: flex;
 	margin: 100px 10px 50px;
-	background-color: #00000080;
-	border-radius: 20px;
 }
 footer{
 	bottom: 0;
@@ -109,21 +109,45 @@ footer{
 }
 #landingPage{
 	display: flex;
-	height: calc(100vh - 60px);
-	margin: 10px 50px 10px 10px;
-	background-color: #c0000060;
+	height: calc(100vh - 150px);
+	margin: 100px 10px 50px;
+	background-color: none;
 	border-radius: 20px;
 	font-size: 5rem;
 	text-align: center;
 	text-transform:uppercase;
+	flex-direction: column;
+	justify-content: space-around;
+	color: #ffc00080;
 }
 #landingPage>*{
 	width: 100%;
-	justify-content: space-around;
-	font-size: 5vw;
+	font-size: 4vw;
+	backdrop-filter: blur(10px);
+}
+#landingPage div{
+	animation: animate 3s linear infinite;
 }
 #fourOfour{
-	font-size: 25vw;
+	font-size: 20vw;
+}
+@keyframes animate {
+	0%,100% {
+		color:#fff08040;
+		text-shadow:none;
+	}
+	15%,85% {
+		color:#fff08080;
+		text-shadow:none;
+		text-shadow:0 0 5px #ffc00040,
+	}
+	50% {
+		color:#fff080ff;
+		text-shadow:0 0 5px #ffc000ff,
+						0 0 15px #ffc000ff,
+						0 0 35px #ffc000ff,
+						0 0 75px #ffc000ff;
+	}
 }
 @media screen and (min-width:768px){
 	a{
