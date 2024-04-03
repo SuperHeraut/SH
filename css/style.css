@@ -64,11 +64,11 @@ header, footer, main{
 	padding: 10px;
 }
 header, footer{
-	position: fixed;
 	margin: 0 10px;
 	background-color: #c0000060;
 }
 header{
+	position: fixed;
 	top: 0;
 	display: flex;
 	justify-content: space-around;
@@ -103,33 +103,39 @@ footer{
 
 /*IDs*/
 #nopage{
-	background-color: #000000ff;
 	background-image: none;
 	color: #ffffffff;
 }
 #landingPage{
 	display: flex;
-	height: calc(100vh - 150px);
-	margin: 100px 10px 50px;
-	background-color: none;
+	min-height: calc(100vh - 150px);
+	margin: 100px 10px 10px;
 	border-radius: 20px;
 	font-size: 5rem;
 	text-align: center;
 	text-transform:uppercase;
 	flex-direction: column;
 	justify-content: space-around;
+	background-color: #c0000060;
 	color: #ffc00080;
 }
 #landingPage>*{
 	width: 100%;
-	font-size: 4vw;
-	backdrop-filter: blur(10px);
+	font-size: 7vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 #landingPage div{
 	animation: animate 3s linear infinite;
+	height:fit-content
+}
+#landingPage div>*{
+	animation: animate 3s linear infinite;
+	height:100%;
 }
 #fourOfour{
-	font-size: 20vw;
+	font-size: 40vw;
 }
 @keyframes animate {
 	0%,100% {
@@ -145,8 +151,8 @@ footer{
 		color:#fff080ff;
 		text-shadow:0 0 5px #ffc000ff,
 						0 0 15px #ffc000ff,
-						0 0 35px #ffc000ff,
-						0 0 75px #ffc000ff;
+						0 0 35px #ffc000a0,
+						0 0 75px #ffc00080;
 	}
 }
 @media screen and (min-width:768px){
@@ -162,5 +168,11 @@ footer{
 		font-weight: 900;
 		text-shadow:0 0 15px #fff080ff;
 		transition-duration: 250ms;
+	}
+	#landingPage>*{
+		font-size: 4vw;
+	}
+	#fourOfour{
+		font-size: 20vw;
 	}
 }
