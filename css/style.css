@@ -44,7 +44,6 @@ a{
 small{
 	font-size: smaller;
 }
-
 /*tags*/
 body{
 	background-color: #000000ff;
@@ -84,10 +83,19 @@ main{
 }
 footer{
 	bottom: 0;
-	height: 40px;
+	height: 45px;
 	border-radius: 20px 20px 0 0;
 	font-size: 100%;
 	font-weight: 700;
+}
+footer>div{
+	height: 100%;
+	width: 100%;
+	padding: 0 5px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 /*classes*/
@@ -99,6 +107,18 @@ footer{
 }
 .flexcol{
 	flex-direction: column;
+}
+.snblock{
+	height:100%;
+	align-items: center;
+}
+.snlink{
+	display: block;
+	position: relative;
+	height:100%;
+}
+.snlink>*{
+	height: 100%;
 }
 
 /*IDs*/
@@ -145,7 +165,7 @@ footer{
 	15%,85% {
 		color:#fff08080;
 		text-shadow:none;
-		text-shadow:0 0 5px #ffc00040,
+		text-shadow:0 0 5px #ffc00040;
 	}
 	50% {
 		color:#fff080ff;
