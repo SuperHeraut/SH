@@ -195,4 +195,10 @@ footer>div{
 	#fourOfour{
 		font-size: 20vw;
 	}
+	.on{
+		display: none;
+	}
+	.off:hover~.on, .on:hover{
+		display: block;
+	}
 }

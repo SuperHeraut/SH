@@ -42,19 +42,19 @@ SN.appendChild(PIXIVBLOCK);
 
 const INSTAOFF = document.createElement("img");
 INSTAOFF.setAttribute("src", "../img/technical/ig-off.svg");
-INSTAOFF.setAttribute("class", "snpic")
+INSTAOFF.setAttribute("class", "snpic off")
 INSTABLOCK.appendChild(INSTAOFF);
 const INSTA = document.createElement("img");
 INSTA.setAttribute("src", "../img/technical/ig.svg");
-INSTA.setAttribute("class", "snpic");
+INSTA.setAttribute("class", "snpic on");
 INSTABLOCK.appendChild(INSTA);
 
 const PIXOFF = document.createElement("img");
 PIXOFF.setAttribute("src", "../img/technical/p-off.svg");
-PIXOFF.setAttribute("class", "rspic");
+PIXOFF.setAttribute("class", "rspic off");
 PIXIVBLOCK.appendChild(PIXOFF);
 const PIX = document.createElement("img");
 PIX.setAttribute("src", "../img/technical/p.svg");
-PIX.setAttribute("class", "rspic");
+PIX.setAttribute("class", "rspic on");
 PIXIVBLOCK.appendChild(PIX);
 
