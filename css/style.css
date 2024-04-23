@@ -79,13 +79,13 @@ header>div{
 }
 main{
 	display: flex;
-	margin: 100px 10px 50px;
+	margin: 100px 10px 70px;
 }
 footer{
 	bottom: 0;
-	height: 45px;
+	height: 65px;
 	border-radius: 20px 20px 0 0;
-	font-size: 100%;
+	font-size: 1.5rem;
 	font-weight: 700;
 }
 footer>div{
@@ -97,7 +97,6 @@ footer>div{
 	justify-content: space-between;
 	align-items: center;
 }
-
 /*classes*/
 .blur{
 	backdrop-filter: blur(5px);
@@ -116,19 +115,23 @@ footer>div{
 	display: block;
 	position: relative;
 	height:100%;
+	width: 45px;
+	margin: 0 2px;
 }
 .snlink>*{
 	height: 100%;
 }
-
+.snlink img{
+	position: absolute;
+}
 /*IDs*/
 #nopage{
 	background-image: none;
 	color: #ffffffff;
 }
-#landingPage{
+#defaultpage{
 	display: flex;
-	min-height: calc(100vh - 150px);
+	min-height: calc(100vh - 175px);
 	margin: 100px 10px 10px;
 	border-radius: 20px;
 	font-size: 5rem;
@@ -139,23 +142,36 @@ footer>div{
 	background-color: #c0000060;
 	color: #ffc00080;
 }
-#landingPage>*{
+#defaultpage>*{
 	width: 100%;
 	font-size: 7vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
-#landingPage div{
+#defaultpage div{
 	animation: animate 3s linear infinite;
-	height:fit-content
+	height:fit-content;
 }
-#landingPage div>*{
+#defaultpage div>*{
 	animation: animate 3s linear infinite;
 	height:100%;
 }
 #fourOfour{
 	font-size: 40vw;
+}
+#landingpage{
+	display: flex;
+	min-height: calc(100vh - 85px);
+	margin: 10px;
+	border-radius: 20px;
+	text-align: center;
+	text-transform:uppercase;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: #c0000060;
+	color: #ffc00080;
+	font-size: 7vw;
 }
 @keyframes animate {
 	0%,100% {
@@ -196,9 +212,11 @@ footer>div{
 		font-size: 20vw;
 	}
 	.on{
-		display: none;
+		opacity: 0;
+		transition-duration: 1000ms;
 	}
 	.off:hover~.on, .on:hover{
-		display: block;
+		opacity: 100%;
+		transition-duration: 500ms;
 	}
 }
