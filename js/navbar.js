@@ -1,22 +1,80 @@
 // navbar dynamique
-
-const HEADER = document.querySelector("header");
 HEADER.setAttribute("class", "blur");
-const HEADERCONTENT = document.createElement("nav");
+HOMEPAGE.setAttribute("href", "../" + langue + "/home.html");
+HEADER.appendChild(HOMEPAGE);
+HOMEPAGE.appendChild(LOGOPORT);
+HOMEPAGE.setAttribute("id", "logo");
+LOGOPORT.setAttribute("src", LOGO);
 HEADER.appendChild(HEADERCONTENT);
-inpoute = document.createElement("span")
-HEADERCONTENT.appendChild(inpoute)
+inpoute = document.createElement("span");
+HEADERCONTENT.appendChild(PRESENTATION);
+HEADERCONTENT.appendChild(HISTORY);
+HEADERCONTENT.appendChild(GALLERY);
+HEADERCONTENT.appendChild(RESOURCES);
+HEADERCONTENT.appendChild(CONTACT);
 switch(langue){
 	case "fr":
-		testinput = "ceci est un test";
+		CONTACT.innerHTML ="contact";
+		GALLERY.innerHTML ="armorial";
+		HISTORY.innerHTML ="histoire";
+		PRESENTATION.innerHTML ="pr&eacute;sentation";
+		RESOURCES.innerHTML ="ressources";
 		break;
 	case "en":
-		testinput = "this is a test";
+		CONTACT.innerHTML ="contact";
+		GALLERY.innerHTML ="roll of arms";
+		HISTORY.innerHTML ="history";
+		PRESENTATION.innerHTML ="presentation";
+		RESOURCES.innerHTML ="resources";
 		break;
 	case "ja":
-		testinput = "テストです";
+		CONTACT.innerHTML ="連絡";
+		GALLERY.innerHTML ="紋章集";
+		HISTORY.innerHTML ="歴史";
+		PRESENTATION.innerHTML ="紋章とは";
+		RESOURCES.innerHTML ="資源物";
+		break;
+};
+switch(page){
+	case CONTACTLINK:
+		CONTACT.setAttribute("id", "active");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		break;
+	case GALLERYLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("id", "active");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		break;
+	case HISTORYLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("id", "active");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		break;
+	case PRESENTATIONLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("id", "active");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		break;
+	case RESOURCESLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("id", "active");
 		break;
 	default:
-		testinput = "?";
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
 };
-inpoute.innerHTML = testinput;

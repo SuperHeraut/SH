@@ -1,0 +1,10 @@
+const BODY = document.querySelector("body");
+const VARS = document.createElement("script");
+VARS.setAttribute("src", "../js/variables.js");
+const NBR = document.createElement("script");
+NBR.setAttribute("src", "../js/navbar.js");
+const FTR = document.createElement("script");
+FTR.setAttribute("src", "../js/footer.js");
+BODY.appendChild(VARS);
+BODY.appendChild(NBR);
+BODY.appendChild(FTR);
