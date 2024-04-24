@@ -8,6 +8,7 @@ let socNet;
 let testinput;
 let inpoute;
 
+const TITLE = document.querySelector("title")
 const HOMEPAGE = document.createElement("a");
 const HEADER = document.querySelector("header");
 const LOGOPORT = document.createElement("img");

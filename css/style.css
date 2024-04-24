@@ -53,7 +53,6 @@ body{
 	background-position-y: center;
 	background-attachment: fixed;
 	background-size: contain;
-	min-height: 100vh;
 	scroll-behavior: smooth;
 	color: #ffffffff;
 }

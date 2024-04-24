@@ -12,6 +12,7 @@ HEADERCONTENT.appendChild(HISTORY);
 HEADERCONTENT.appendChild(GALLERY);
 HEADERCONTENT.appendChild(RESOURCES);
 HEADERCONTENT.appendChild(CONTACT);
+TITLE.innerHTML ="SuperHéraut";
 switch(langue){
 	case "fr":
 		CONTACT.innerHTML ="contact";
@@ -28,6 +29,7 @@ switch(langue){
 		RESOURCES.innerHTML ="resources";
 		break;
 	case "ja":
+		HEADER.setAttribute("class", "jtext");
 		CONTACT.innerHTML ="連絡";
 		GALLERY.innerHTML ="紋章集";
 		HISTORY.innerHTML ="歴史";
