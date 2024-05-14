@@ -37,7 +37,7 @@ switch(langue){
 		RESOURCES.innerHTML ="資源物";
 		break;
 };
-switch(page){
+switch(pagename){
 	case CONTACTLINK:
 		CONTACT.setAttribute("id", "active");
 		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");

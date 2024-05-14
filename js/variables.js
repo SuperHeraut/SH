@@ -1,14 +1,24 @@
 // Variables à stocker ici et à réutiliser
+const PAGELINK = location.pathname.split("/");
 
-
-let langue = document.querySelector("html").getAttribute("lang");
+const PAGELOC = PAGELINK[PAGELINK.length - 1].split(".");
+let pagename = PAGELOC[0];
+if (pagename == 404){
+	pagename = "nopage";
+}
+let langue = PAGELINK[PAGELINK.length - 2];
+if (langue == "default"){
+	langue = "zxx";
+};
 let page = document.querySelector("html").getAttribute("id");
 let cond;
 let socNet;
 let testinput;
 let inpoute;
 
-const TITLE = document.querySelector("title")
+const TITLE = document.createElement("title");
+HEAD.appendChild(TITLE);
+HTML.setAttribute("id", pagename);
 const HOMEPAGE = document.createElement("a");
 const HEADER = document.querySelector("header");
 const LOGOPORT = document.createElement("img");
