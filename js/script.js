@@ -15,7 +15,6 @@ HEAD.appendChild(CHAR);
 HEAD.appendChild(VP);
 HEAD.appendChild(RESETCSS);
 HEAD.appendChild(SETCSS);
-
 const BODY = document.querySelector("body");
 	const VARS = document.createElement("script");
 		VARS.setAttribute("src", "../js/variables.js");
