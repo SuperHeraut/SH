@@ -74,6 +74,7 @@ header{
 	border-radius: 0 0 20px 20px;
 	height: 90px;
 	font-size: 2rem;
+	z-index: 99;
 }
 header>div{
 	text-align: center;
@@ -103,8 +104,11 @@ nav{
 	display: flex;
 	height: 100%;
 	width: 90%;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
+}
+h1{
+	text-transform: uppercase;
 }
 /*classes*/
 .blur{
@@ -115,6 +119,9 @@ nav{
 }
 .flexcol{
 	flex-direction: column;
+}
+.flexrow{
+	flex-direction: row;
 }
 .snblock{
 	height:100%;
@@ -132,6 +139,36 @@ nav{
 }
 .snlink img{
 	position: absolute;
+}
+.langicon{
+	height: 70px;
+}
+.nodisp{
+	display: none;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	justify-content: center;
+	text-align: center;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+.box>img{
+	max-width: 250px;
+	max-height: 300px;
+	margin: auto;
+}
+.box>span{
+	padding: 0.5rem 0 0;
+	font-size: 1.5rem;
+}
+.fullwidth{
+	width: 100%;
+}
+.gules{
+	color: ;
 }
 /*IDs*/
 #logo{
@@ -189,6 +226,12 @@ nav{
 	background-color: #c0000060;
 	color: #ffc00080;
 	font-size: 7vw;
+}
+#langmenu{
+	right: 0;
+	display: flex;
+	width: 140px;
+	justify-content: space-between;
 }
 @keyframes animate {
 	0%,100% {

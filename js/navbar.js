@@ -12,6 +12,14 @@ HEADERCONTENT.appendChild(HISTORY);
 HEADERCONTENT.appendChild(GALLERY);
 HEADERCONTENT.appendChild(RESOURCES);
 HEADERCONTENT.appendChild(CONTACT);
+HEADERCONTENT.appendChild(LANGKIT);
+LANGKIT.appendChild(LANGKITFR);
+LANGKIT.appendChild(LANGKITEN);
+LANGKIT.appendChild(LANGKITJA);
+LANGKIT.setAttribute("id", "langmenu");
+LANGKITFR.appendChild(LANGFRIMG);
+LANGKITEN.appendChild(LANGENIMG);
+LANGKITJA.appendChild(LANGJAIMG);
 TITLE.innerHTML ="SuperHéraut";
 switch(langue){
 	case "fr":
@@ -20,6 +28,13 @@ switch(langue){
 		HISTORY.innerHTML ="histoire";
 		PRESENTATION.innerHTML ="pr&eacute;sentation";
 		RESOURCES.innerHTML ="ressources";
+		LANGKITFR.setAttribute("class", "nodisp");
+		LANGKITEN.setAttribute("href", "../en/" + pagename + ".html");
+		LANGKITJA.setAttribute("href", "../ja/" + pagename + ".html");
+		LANGENIMG.setAttribute("src", "../img/technical/en.svg");
+		LANGJAIMG.setAttribute("src", "../img/technical/ja.svg");
+		LANGENIMG.setAttribute("class", "langicon");
+		LANGJAIMG.setAttribute("class", "langicon");
 		break;
 	case "en":
 		CONTACT.innerHTML ="contact";
@@ -27,6 +42,13 @@ switch(langue){
 		HISTORY.innerHTML ="history";
 		PRESENTATION.innerHTML ="presentation";
 		RESOURCES.innerHTML ="resources";
+		LANGKITEN.setAttribute("class", "nodisp");
+		LANGKITFR.setAttribute("href", "../fr/" + pagename + ".html");
+		LANGKITJA.setAttribute("href", "../ja/" + pagename + ".html");
+		LANGFRIMG.setAttribute("src", "../img/technical/fr.svg");
+		LANGJAIMG.setAttribute("src", "../img/technical/ja.svg");
+		LANGFRIMG.setAttribute("class", "langicon");
+		LANGJAIMG.setAttribute("class", "langicon");
 		break;
 	case "ja":
 		HEADER.setAttribute("class", "jtext");
@@ -35,6 +57,13 @@ switch(langue){
 		HISTORY.innerHTML ="歴史";
 		PRESENTATION.innerHTML ="紋章とは";
 		RESOURCES.innerHTML ="資源物";
+		LANGKITJA.setAttribute("class", "nodisp");
+		LANGKITFR.setAttribute("href", "../fr/" + pagename + ".html");
+		LANGKITEN.setAttribute("href", "../en/" + pagename + ".html");
+		LANGFRIMG.setAttribute("src", "../img/technical/fr.svg");
+		LANGENIMG.setAttribute("src", "../img/technical/en.svg");
+		LANGFRIMG.setAttribute("class", "langicon");
+		LANGENIMG.setAttribute("class", "langicon");
 		break;
 };
 switch(pagename){

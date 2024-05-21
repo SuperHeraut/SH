@@ -5,7 +5,6 @@ FOOTER.appendChild(FOOTERCONTENT);
 
 COPYRIGHT.setAttribute("id", "copy");
 FOOTERCONTENT.appendChild(COPYRIGHT);
-COPYRIGHT.innerHTML = "&copy;2024 SuperHéraut";
 
 cond = document.createElement("a");
 FOOTERCONTENT.appendChild(cond);
@@ -40,18 +39,21 @@ PIXIVBLOCK.appendChild(PIX);
 
 switch(langue){
 	case "fr":
+		COPYRIGHT.innerHTML = "2024 SuperHéraut";
 		cond.innerHTML = "mentions l&eacute;gales";
 		socNet.innerHTML = "r&eacute;seaux sociaux&#58;";
 		PIXIVBLOCK.setAttribute("href", "https://www.pixiv.net/en/users/85221465");
 		PIXIVBLOCK.setAttribute("target", "_blank");
 		break;
 	case "en":
+		COPYRIGHT.innerHTML = "&copy;2024 SuperHéraut";
 		cond.innerHTML = "legal notice";
 		socNet.innerHTML = "social networks";
 		PIXIVBLOCK.setAttribute("href", "https://www.pixiv.net/en/users/85221465");
 		PIXIVBLOCK.setAttribute("target", "_blank");
 		break;
 	case "ja":
+		COPYRIGHT.innerHTML = "&copy;&#13055;6年 SuperHéraut";
 		cond.setAttribute("class", "jtext")
 		cond.innerHTML = "利用規約 及び 個人情報使用方針";
 		socNet.innerHTML = "SNS";
