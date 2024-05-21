@@ -168,7 +168,54 @@ h1{
 	width: 100%;
 }
 .gules{
-	color: ;
+	color:#ffa0a0ff;
+	font-weight: 900;
+	text-shadow:0 0 15px #ff0808ff, 0 0 15px #ff0808ff;
+}
+.azure{
+	color:#a0c0ffff;
+	font-weight: 900;
+	text-shadow:0 0 15px #0860ffff, 0 0 15px #0860ffff;
+}
+.sable{
+	color:#000000ff;
+	font-weight: 900;
+	text-shadow:0 0 15px #ffffffff, 0 0 15px #ffffffff;
+}
+.vert{
+	color:#a0ffa0ff;
+	font-weight: 900;
+	text-shadow:0 0 15px #40ff40ff, 0 0 15px #40ff40ff;
+}
+.purpure{
+	color:#ffc0ffff;
+	font-weight: 900;
+	text-shadow:0 0 15px #ff60ffff, 0 0 15px #ff60ffff;
+}
+.sanguine{
+	color:#ffa0a0c0;
+	font-weight: 900;
+	text-shadow:0 0 15px #ff080880, 0 0 15px #ff080880;
+}
+.tawny{
+	color:#ffd8a0c0;
+	font-weight: 900;
+	text-shadow:0 0 15px #ffc00880, 0 0 15px #ffc00880;
+}
+.orange{
+	color:#ffc0a0ff;
+	font-weight: 900;
+	text-shadow:0 0 15px #ff8008ff, 0 0 15px #ff8008ff;
+}
+.steel{
+	color:#ffffff80;
+	font-weight: 900;
+	text-shadow:0 0 15px #ffffffc0, 0 0 15px #ffffffc0;
+}
+.or{
+	color:#a0c0ffff;
+	font-weight: 900;
+	text-shadow:0 0 15px #0860ffff, 0 0 15px #0860ffff;
 }
 /*IDs*/
 #logo{
