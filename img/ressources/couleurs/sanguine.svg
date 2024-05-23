@@ -49,21 +49,21 @@
        inkscape:collect="always"
        id="linearGradient4">
       <stop
-         style="stop-color:#ffffff;stop-opacity:0;"
+         style="stop-color:#a88000;stop-opacity:0;"
          offset="0"
          id="stop1" />
       <stop
          id="stop2"
          offset="0.66780823"
-         style="stop-color:#ffffff;stop-opacity:0;" />
+         style="stop-color:#a88000;stop-opacity:0;" />
       <stop
-         style="stop-color:#806000;stop-opacity:1;"
+         style="stop-color:#a88000;stop-opacity:1;"
          offset="0.66780823"
          id="stop3" />
       <stop
          id="stop4"
          offset="1"
-         style="stop-color:#806000;stop-opacity:1;" />
+         style="stop-color:#a88000;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
@@ -80,21 +80,21 @@
        inkscape:collect="always"
        id="linearGradient16">
       <stop
-         style="stop-color:#000000;stop-opacity:0;"
+         style="stop-color:#a88000;stop-opacity:0;"
          offset="0"
          id="stop13" />
       <stop
          id="stop14"
          offset="0.66582191"
-         style="stop-color:#000000;stop-opacity:0;" />
+         style="stop-color:#a88000;stop-opacity:0;" />
       <stop
-         style="stop-color:#806000;stop-opacity:1;"
+         style="stop-color:#a88000;stop-opacity:1;"
          offset="0.66582191"
          id="stop15" />
       <stop
          id="stop16"
          offset="1"
-         style="stop-color:#806000;stop-opacity:1;" />
+         style="stop-color:#a88000;stop-opacity:1;" />
     </linearGradient>
   </defs>
   <sodipodi:namedview
@@ -105,8 +105,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.443451"
-     inkscape:cx="240.3961"
-     inkscape:cy="283.69511"
+     inkscape:cx="240.04971"
+     inkscape:cy="283.00233"
      inkscape:document-units="px"
      inkscape:current-layer="g3020"
      showgrid="false"
@@ -160,13 +160,13 @@
          inkscape:connector-curvature="0"
          id="path1020"
          d="m 253.06893,157.69925 h 65.8311 v 102.37907 c 0,15.99296 -10.79492,25.82029 -25.36018,30.96895 -11.74151,4.1505 -26.84816,6.14794 -40.47092,15.40961 z"
-         style="fill:url(#linearGradient2661);fill-opacity:1;stroke:#806000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:url(#linearGradient2661);fill-opacity:1;stroke:#a88000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccsscc"
          inkscape:connector-curvature="0"
          id="path1000"
          d="m 253.06893,157.69925 h -65.83111 v 102.37908 c 0,15.99296 10.79492,25.82029 25.36018,30.96895 11.74152,4.1505 26.84817,6.14794 40.47093,15.4096 z"
-         style="fill:#a80000;fill-opacity:1;stroke:#806000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#a80000;fill-opacity:1;stroke:#a88000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>

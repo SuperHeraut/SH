@@ -83,6 +83,36 @@ main{
 	display: flex;
 	margin: 100px 10px 70px;
 }
+h1{
+	font-size: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 0.5rem;
+}
+h2{
+	font-size: 2.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h3{
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h4{
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+h5{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+h6{
+	font-size: 1.25rem;
+	font-weight: 700;
+}
 footer{
 	position: fixed;
 	bottom: 0;
@@ -107,10 +137,18 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 }
-h1{
-	text-transform: uppercase;
+i{
+	font-style: italic;
 }
 /*classes*/
+.blackblur{
+	background-color: #00000060;
+	backdrop-filter: blur(10px);
+}
+.redblur{
+	background-color: #c0000060;
+	backdrop-filter: blur(5px);
+}
 .blur{
 	backdrop-filter: blur(5px);
 }
@@ -122,6 +160,10 @@ h1{
 }
 .flexrow{
 	flex-direction: row;
+}
+.threerow{
+	width: 100%;
+	justify-content: space-evenly;
 }
 .snblock{
 	height:100%;
@@ -154,15 +196,17 @@ h1{
 	text-align: center;
 	padding: 1rem;
 	box-sizing: border-box;
+	align-self: flex-start;
 }
 .box>img{
-	max-width: 250px;
+	max-width: 100%;
 	max-height: 300px;
 	margin: auto;
 }
 .box>span{
 	padding: 0.5rem 0 0;
 	font-size: 1.5rem;
+	font-weight: 100;
 }
 .fullwidth{
 	width: 100%;
@@ -170,52 +214,62 @@ h1{
 .gules{
 	color:#ffa0a0ff;
 	font-weight: 900;
-	text-shadow:0 0 15px #ff0808ff, 0 0 15px #ff0808ff;
+	text-shadow:0 0 5px #ff0808ff, 0 0 15px #ff0808ff;
 }
 .azure{
 	color:#a0c0ffff;
 	font-weight: 900;
-	text-shadow:0 0 15px #0860ffff, 0 0 15px #0860ffff;
+	text-shadow:0 0 5px #0860ffff, 0 0 15px #0860ffff;
 }
 .sable{
 	color:#000000ff;
 	font-weight: 900;
-	text-shadow:0 0 15px #ffffffff, 0 0 15px #ffffffff;
+	text-shadow:0 0 5px #ffffffff, 0 0 15px #ffffffff;
 }
 .vert{
 	color:#a0ffa0ff;
 	font-weight: 900;
-	text-shadow:0 0 15px #40ff40ff, 0 0 15px #40ff40ff;
+	text-shadow:0 0 5px #40ff40ff, 0 0 15px #40ff40ff;
 }
 .purpure{
 	color:#ffc0ffff;
 	font-weight: 900;
-	text-shadow:0 0 15px #ff60ffff, 0 0 15px #ff60ffff;
+	text-shadow:0 0 5px #ff60ffff, 0 0 15px #ff60ffff;
 }
 .sanguine{
-	color:#ffa0a0c0;
+	color:#e08080ff;
 	font-weight: 900;
-	text-shadow:0 0 15px #ff080880, 0 0 15px #ff080880;
+	text-shadow:0 0 5px #ff0808c0, 0 0 15px #ff0808c0;
 }
 .tawny{
-	color:#ffd8a0c0;
+	color:#ffd8a0e0;
 	font-weight: 900;
-	text-shadow:0 0 15px #ffc00880, 0 0 15px #ffc00880;
+	text-shadow:0 0 5px #ffc008c0, 0 0 15px #ffc008c0;
 }
 .orange{
 	color:#ffc0a0ff;
 	font-weight: 900;
-	text-shadow:0 0 15px #ff8008ff, 0 0 15px #ff8008ff;
+	text-shadow:0 0 5px #ff8008ff, 0 0 15px #ff8008ff;
 }
 .steel{
-	color:#ffffff80;
+	color: #c0c0c0ff;
 	font-weight: 900;
-	text-shadow:0 0 15px #ffffffc0, 0 0 15px #ffffffc0;
+	text-shadow:0 0 5px #a0a0a0ff, 0 0 15px #a0a0a0ff;
+}
+.murrey{
+	color:#e080c0ff;
+	font-weight: 900;
+	text-shadow:0 0 5px #a03080ff, 0 0 15px #a03080ff;
 }
 .or{
-	color:#a0c0ffff;
+	color:#ffe0c0ff;
 	font-weight: 900;
-	text-shadow:0 0 15px #0860ffff, 0 0 15px #0860ffff;
+	text-shadow:0 0 5px #ffc000ff, 0 0 15px #ffc000ff;
+}
+.argent{
+	color:#ffffffff;
+	font-weight: 900;
+	text-shadow:0 0 5px #ffffffc0, 0 0 15px #ffffffc0;
 }
 /*IDs*/
 #logo{

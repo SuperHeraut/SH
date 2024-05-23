@@ -26,41 +26,41 @@
        inkscape:collect="always"
        id="linearGradient4">
       <stop
-         style="stop-color:#000000;stop-opacity:0;"
+         style="stop-color:#a88000;stop-opacity:0;"
          offset="0"
          id="stop1" />
       <stop
          id="stop2"
          offset="0.59510392"
-         style="stop-color:#000000;stop-opacity:0;" />
+         style="stop-color:#a88000;stop-opacity:0;" />
       <stop
-         style="stop-color:#806000;stop-opacity:1;"
+         style="stop-color:#a88000;stop-opacity:1;"
          offset="0.59510392"
          id="stop3" />
       <stop
          id="stop4"
          offset="1"
-         style="stop-color:#806000;stop-opacity:1;" />
+         style="stop-color:#a88000;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient2532">
       <stop
-         style="stop-color:#000000;stop-opacity:0;"
+         style="stop-color:#a88000;stop-opacity:0;"
          offset="0"
          id="stop2528" />
       <stop
          id="stop2564"
          offset="0.59493154"
-         style="stop-color:#000000;stop-opacity:0;" />
+         style="stop-color:#a88000;stop-opacity:0;" />
       <stop
-         style="stop-color:#806000;stop-opacity:1;"
+         style="stop-color:#a88000;stop-opacity:1;"
          offset="0.59493154"
          id="stop2566" />
       <stop
          id="stop2558"
          offset="1"
-         style="stop-color:#806000;stop-opacity:1;" />
+         style="stop-color:#a88000;stop-opacity:1;" />
     </linearGradient>
     <pattern
        patternUnits="userSpaceOnUse"
@@ -119,9 +119,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="419"
-     inkscape:cy="381.5"
+     inkscape:zoom="1.443451"
+     inkscape:cx="249.4023"
+     inkscape:cy="281.61676"
      inkscape:document-units="px"
      inkscape:current-layer="g1028"
      showgrid="false"
@@ -174,17 +174,17 @@
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccsscc" />
       <path
-         sodipodi:nodetypes="ccsscc"
-         inkscape:connector-curvature="0"
-         id="path1024"
-         d="m -26.080352,157.69925 h -65.831111 v 102.37908 c 0,15.99296 10.794921,25.82029 25.36018,30.96895 11.74152,4.1505 26.84817,6.14794 40.470931,15.4096 z"
-         style="fill:#800060;fill-opacity:1;stroke:#806000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         style="fill:url(#linearGradient2697);fill-opacity:1;stroke:#806000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:url(#linearGradient2697);fill-opacity:1;stroke:#a88000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -26.080352,157.69925 h 65.831107 l 1e-6,102.37908 c 10e-7,15.99296 -10.794918,25.82029 -25.36018,30.96895 -11.7415162,4.1505 -26.848167,6.14794 -40.470929,15.4096 z"
          id="path1026"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccsscc" />
+      <path
+         sodipodi:nodetypes="ccsscc"
+         inkscape:connector-curvature="0"
+         id="path1024"
+         d="m -26.080352,157.69925 h -65.831111 v 102.37908 c 0,15.99296 10.794921,25.82029 25.36018,30.96895 11.74152,4.1505 26.84817,6.14794 40.470931,15.4096 z"
+         style="fill:#800060;fill-opacity:1;stroke:#a88000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>
