@@ -27,9 +27,18 @@
 html{
 	font-family: Designio;
 	font-weight: 400;
-	font-size: 16px;
 	color: #ffffffff;
 	cursor: url(../img/technical/cursor.png), default;
+}
+a{
+	cursor: url(../img/technical/cursor.png), pointer;
+}
+header a, footer a{
+	cursor: url(../img/technical/cursor.png), pointer;
+	color:#fff080ff;
+	font-weight: 900;
+	text-shadow:0 0 15px #fff080ff;
+	transition-duration: 250ms;
 }
 a{
 	cursor: url(../img/technical/cursor.png), pointer;
@@ -47,7 +56,7 @@ small{
 /*tags*/
 body{
 	background-color: #000000ff;
-	background-image: url(../img/logo.svg);
+	background-image: url(../img/technical/logo.svg);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: center;
@@ -80,7 +89,6 @@ header>div{
 	text-align: center;
 }
 main{
-	display: flex;
 	margin: 100px 10px 70px;
 }
 h1{
@@ -95,19 +103,23 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
+	padding: 0.5rem;
 }
 h3{
 	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: 700;
+	padding: 0.25rem;
 }
 h4{
 	font-size: 1.75rem;
 	font-weight: 700;
+	padding: 0.125rem;
 }
 h5{
 	font-size: 1.5rem;
 	font-weight: 700;
+	padding: 0.0625rem;
 }
 h6{
 	font-size: 1.25rem;
@@ -165,6 +177,9 @@ i{
 	width: 100%;
 	justify-content: space-evenly;
 }
+.margintop{
+	margin: 10px 0 0;
+}
 .snblock{
 	height:100%;
 	align-items: center;
@@ -198,9 +213,14 @@ i{
 	box-sizing: border-box;
 	align-self: flex-start;
 }
-.box>img{
+.box>.fullarms{
 	max-width: 100%;
 	max-height: 300px;
+	margin: auto;
+}
+.box>.escutcheon{
+	max-width: 60%;
+	max-height: 200px;
 	margin: auto;
 }
 .box>span{
@@ -353,10 +373,21 @@ i{
 	}
 }
 @media screen and (min-width:768px){
-	a{
-		cursor: url(../img//technical/cursor.png), pointer;
+	header a, footer a{
 		color:#ffc00080;
 		transition-duration: 1000ms;
+		font-weight: 400;
+		text-shadow:none;
+	}
+	header a:hover, footer a:hover{
+		color:#fff080ff;
+		font-weight: 900;
+		text-shadow:0 0 15px #fff080ff;
+		transition-duration: 250ms;
+	}
+	a{
+		color:#ffc000a0;
+		transition-duration: 750ms;
 		font-weight: 400;
 		text-shadow:none;
 	}
