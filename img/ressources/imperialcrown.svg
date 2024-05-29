@@ -109,11 +109,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.42740678"
-     inkscape:cx="705.41699"
-     inkscape:cy="-8.1889202"
+     inkscape:zoom="2.4177779"
+     inkscape:cx="203.90624"
+     inkscape:cy="139.59099"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="g49135"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
@@ -158,10 +158,10 @@
        transform="matrix(1.6640368,0,0,1.6640368,2945.7794,1274.3766)">
       <path
          style="fill:#a800a8;fill-opacity:1;stroke:#c08000;stroke-width:0.600948;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -428.58916,-854.34843 c 0,0 -0.70595,-77.48353 -11.75589,-75.70612 -61.77763,9.93712 -23.64126,67.94881 -20.27657,90.15809 h 178.47178 c 3.36469,-22.20928 41.50106,-80.22097 -20.27657,-90.15809 -11.04994,-1.77741 -11.75589,75.70612 -11.75589,75.70612 v -44.25546 c -5.80373,-0.8901 -10.048,-7.46973 -15.9192,-7.54064 -4.12562,-0.0498 -11.31099,5.02711 -11.31099,5.02711 -9.53721,0.52534 -16.00711,-9.21637 -29.97322,-9.21637 -13.96615,0 -20.43605,9.74171 -29.97326,9.21637 0,0 -7.18532,-5.07691 -11.31099,-5.02711 -5.8712,0.0709 -10.11542,6.65054 -15.9192,7.54064 z"
+         d="m -440.34505,-930.05455 c -61.77763,9.93712 -23.64126,67.94881 -20.27657,90.15809 h 178.47178 c 3.36469,-22.20928 41.50106,-80.22097 -20.27657,-90.15809 -11.04994,-1.77741 -11.75589,31.45066 -11.75589,31.45066 -5.80373,-0.8901 -10.048,-7.46973 -15.9192,-7.54064 -4.12562,-0.0498 -11.31099,5.02711 -11.31099,5.02711 -9.53721,0.52534 -16.00711,-9.21637 -29.97322,-9.21637 -13.96615,0 -20.43605,9.74171 -29.97326,9.21637 0,0 -7.18532,-5.07691 -11.31099,-5.02711 -5.8712,0.0709 -10.11542,6.65054 -15.9192,7.54064 0,0 -0.70595,-33.22807 -11.75589,-31.45066 z"
          id="path49197"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="csccsccsczcscc" />
+         sodipodi:nodetypes="sccscsczcscs" />
       <g
          style="fill:#ffbf00;fill-opacity:1;stroke:#c08000;stroke-width:0.600948;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="g48911">
