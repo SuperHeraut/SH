@@ -1,6 +1,6 @@
 // footer
 
-FOOTER.setAttribute("class", "blur");
+FOOTER.setAttribute("class", "redblur");
 FOOTER.appendChild(FOOTERCONTENT);
 
 COPYRIGHT.setAttribute("id", "copy");

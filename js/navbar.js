@@ -1,18 +1,52 @@
 // navbar dynamique
-HEADER.setAttribute("class", "blur");
+HEADER.setAttribute("class", "redblur");
 HOMEPAGE.setAttribute("href", "../" + langue + "/home.html");
 HEADER.appendChild(HOMEPAGE);
 HOMEPAGE.appendChild(LOGOPORT);
 HOMEPAGE.setAttribute("id", "logo");
 LOGOPORT.setAttribute("src", LOGO);
 HEADER.appendChild(HEADERCONTENT);
-inpoute = document.createElement("span");
-HEADERCONTENT.appendChild(PRESENTATION);
-HEADERCONTENT.appendChild(HISTORY);
-HEADERCONTENT.appendChild(GALLERY);
-HEADERCONTENT.appendChild(RESOURCES);
-HEADERCONTENT.appendChild(CONTACT);
+HEADERCONTENT.appendChild(HEADERMENU);
+	HEADERMENU.appendChild(ITEMPRES);
+	HEADERMENU.appendChild(ITEMHIST);
+	HEADERMENU.appendChild(ITEMARMR);
+	HEADERMENU.appendChild(ITEMRSRC);
+	HEADERMENU.appendChild(ITEMCTCT);
 HEADERCONTENT.appendChild(LANGKIT);
+
+
+HEADERMENU.setAttribute("class", "flex even");
+ITEMPRES.setAttribute("class", "responsiveitem");
+ITEMHIST.setAttribute("class", "responsiveitem");
+ITEMARMR.setAttribute("class", "responsiveitem");
+ITEMRSRC.setAttribute("class", "responsiveitem sublisthead");
+ITEMCTCT.setAttribute("class", "responsiveitem");
+ITEMPRES.appendChild(PRESENTATION);
+ITEMHIST.appendChild(HISTORY);
+ITEMARMR.appendChild(GALLERY);
+ITEMRSRC.appendChild(RESOURCES);
+ITEMRSRC.appendChild(RESOURCESLIST);
+	RESOURCESLIST.setAttribute("class", "sublist");
+	RESOURCESLIST.appendChild(ITEMSHIELDS);
+	RESOURCESLIST.appendChild(ITEMTINCTURES);
+	RESOURCESLIST.appendChild(ITEMDIVISIONS);
+	RESOURCESLIST.appendChild(ITEMPOSITIONS);
+	RESOURCESLIST.appendChild(ITEMORDINARIES);
+	RESOURCESLIST.appendChild(ITEMCHARGES);
+		ITEMSHIELDS.appendChild(SHIELDS);
+		ITEMSHIELDS.setAttribute("class", "sublistitem");
+		ITEMTINCTURES.appendChild(TINCTURES);
+		ITEMTINCTURES.setAttribute("class", "sublistitem");
+		ITEMDIVISIONS.appendChild(DIVISIONS);
+		ITEMDIVISIONS.setAttribute("class", "sublistitem");
+		ITEMPOSITIONS.appendChild(POSITIONS);
+		ITEMPOSITIONS.setAttribute("class", "sublistitem");
+		ITEMORDINARIES.appendChild(ORDINARIES);
+		ITEMORDINARIES.setAttribute("class", "sublistitem");
+		ITEMCHARGES.appendChild(CHARGES);
+		ITEMCHARGES.setAttribute("class", "sublistitem");
+ITEMCTCT.appendChild(CONTACT);
+
 LANGKIT.appendChild(LANGKITFR);
 LANGKIT.appendChild(LANGKITEN);
 LANGKIT.appendChild(LANGKITJA);
@@ -28,6 +62,12 @@ switch(langue){
 		HISTORY.innerHTML ="histoire";
 		PRESENTATION.innerHTML ="pr&eacute;sentation";
 		RESOURCES.innerHTML ="ressources";
+		SHIELDS.innerHTML ="&eacute;cus";
+		TINCTURES.innerHTML ="couleurs";
+		DIVISIONS.innerHTML ="partitions";
+		POSITIONS.innerHTML ="positions";
+		ORDINARIES.innerHTML ="pi&egrave;ces";
+		CHARGES.innerHTML ="meubles";
 		LANGKITFR.setAttribute("class", "nodisp");
 		LANGKITEN.setAttribute("href", "../en/" + pagename + ".html");
 		LANGKITJA.setAttribute("href", "../ja/" + pagename + ".html");
@@ -42,6 +82,12 @@ switch(langue){
 		HISTORY.innerHTML ="history";
 		PRESENTATION.innerHTML ="presentation";
 		RESOURCES.innerHTML ="resources";
+		SHIELDS.innerHTML ="escutcheons";
+		TINCTURES.innerHTML ="tinctures";
+		DIVISIONS.innerHTML ="divisions";
+		POSITIONS.innerHTML ="position";
+		ORDINARIES.innerHTML ="ordinaries";
+		CHARGES.innerHTML ="charges";
 		LANGKITEN.setAttribute("class", "nodisp");
 		LANGKITFR.setAttribute("href", "../fr/" + pagename + ".html");
 		LANGKITJA.setAttribute("href", "../ja/" + pagename + ".html");
@@ -57,6 +103,12 @@ switch(langue){
 		HISTORY.innerHTML ="歴史";
 		PRESENTATION.innerHTML ="紋章とは";
 		RESOURCES.innerHTML ="資源物";
+		SHIELDS.innerHTML ="盾";
+		TINCTURES.innerHTML ="色";
+		DIVISIONS.innerHTML ="分割";
+		POSITIONS.innerHTML ="位置";
+		ORDINARIES.innerHTML ="オーディナリー";
+		CHARGES.innerHTML ="チャージ";
 		LANGKITJA.setAttribute("class", "nodisp");
 		LANGKITFR.setAttribute("href", "../fr/" + pagename + ".html");
 		LANGKITEN.setAttribute("href", "../en/" + pagename + ".html");
@@ -73,6 +125,12 @@ switch(pagename){
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
 		break;
 	case GALLERYLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
@@ -80,6 +138,12 @@ switch(pagename){
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
 		break;
 	case HISTORYLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
@@ -87,6 +151,12 @@ switch(pagename){
 		HISTORY.setAttribute("id", "active");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
 		break;
 	case PRESENTATIONLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
@@ -94,6 +164,12 @@ switch(pagename){
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("id", "active");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
 		break;
 	case RESOURCESLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
@@ -101,6 +177,90 @@ switch(pagename){
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("id", "active");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
+		break;
+	case CHARGESLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("id", "active");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
+		break;
+	case TINCTURESLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("id", "active");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
+		break;
+	case DIVISIONSLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("id", "active");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
+		break;
+	case ORDINARIESLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("id", "active");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
+		break;
+	case POSITIONSLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("id", "active");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
+		break;
+	case SHIELDSLINK:
+		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
+		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
+		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
+		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("id", "active");
 		break;
 	default:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
@@ -108,4 +268,10 @@ switch(pagename){
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
+		CHARGES.setAttribute("href", "../" + langue + "/" + CHARGESLINK + ".html");
+		TINCTURES.setAttribute("href", "../" + langue + "/" + TINCTURESLINK + ".html");
+		DIVISIONS.setAttribute("href", "../" + langue + "/" + DIVISIONSLINK + ".html");
+		ORDINARIES.setAttribute("href", "../" + langue + "/" + ORDINARIESLINK + ".html");
+		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
+		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
 };

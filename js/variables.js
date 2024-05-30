@@ -1,54 +1,85 @@
 // Variables à stocker ici et à réutiliser
 const PAGELINK = location.pathname.split("/");
-console.log(PAGELINK);
 const PAGELOC = PAGELINK[PAGELINK.length - 1].split(".");
-console.log(PAGELOC);
 let pagename = PAGELOC[0];
-if (pagename == 404){
-	pagename = "nopage";
-}
 let langue = PAGELINK[PAGELINK.length - 2];
-if (langue == "default"){
-	langue = "zxx";
-};
 let page = document.querySelector("html").getAttribute("id");
 let cond;
 let socNet;
-let testinput;
-let inpoute;
+if (pagename == 404){
+	pagename = "nopage";
+}
+if (langue == "default"){
+	langue = "zxx";
+};
 
-const TITLE = document.createElement("title");
-	HEAD.appendChild(TITLE);
-HTML.setAttribute("id", pagename);
-const HOMEPAGE = document.createElement("a");
 const HEADER = document.querySelector("header");
-const LOGOPORT = document.createElement("img");
-const HEADERCONTENT = document.createElement("nav");
-const LOGO = "../img/technical/logo.svg"
+	const HEADERCONTENT = document.createElement("nav");
+
+const HEADERMENU = document.createElement("ul");
+	const ITEMPRES = document.createElement("li");
+	const ITEMHIST = document.createElement("li");
+	const ITEMARMR = document.createElement("li");
+	const ITEMRSRC = document.createElement("li");
+	const ITEMCTCT = document.createElement("li");
+
 const FOOTER = document.querySelector("footer");
 const FOOTERCONTENT = document.createElement("div");
-const COPYRIGHT = document.createElement("span");
+
+const HOMEPAGE = document.createElement("a");
+const LOGOPORT = document.createElement("img");
+	const LOGO = "../img/technical/logo.svg";
+
+const TITLE = document.createElement("title");
 const SN = document.createElement("div");
 const INSTABLOCK = document.createElement("a");
 const PIXIVBLOCK = document.createElement("a");
-const INSTAOFF = document.createElement("img");
-const INSTA = document.createElement("img");
-const PIXOFF = document.createElement("img");
-const PIX = document.createElement("img");
 const CONTACT = document.createElement("a");
 const GALLERY = document.createElement("a");
 const HISTORY = document.createElement("a");
 const PRESENTATION = document.createElement("a");
-const RESOURCES = document.createElement("a");
+
+const COPYRIGHT = document.createElement("span");
+
+const INSTAOFF = document.createElement("img");
+const INSTA = document.createElement("img");
+const PIXOFF = document.createElement("img");
+const PIX = document.createElement("img");
+
 const CONTACTLINK = "contact";
 const GALLERYLINK = "gallery";
 const HISTORYLINK = "history";
 const PRESENTATIONLINK = "presentation";
 const RESOURCESLINK = "resources";
+
 const LANGKIT = document.createElement("div");
-const LANGKITFR = document.createElement("a");
-const LANGKITEN = document.createElement("a");
-const LANGKITJA = document.createElement("a");
+	const LANGKITFR = document.createElement("a");
+	const LANGKITEN = document.createElement("a");
+	const LANGKITJA = document.createElement("a");
+	const RESOURCES = document.createElement("a");
+
+const RESOURCESLIST = document.createElement("ul");
+	const ITEMCHARGES = document.createElement("li");
+	const ITEMTINCTURES = document.createElement("li");
+	const ITEMDIVISIONS = document.createElement("li");
+	const ITEMORDINARIES = document.createElement("li");
+	const ITEMPOSITIONS = document.createElement("li");
+	const ITEMSHIELDS = document.createElement("li");
+	const CHARGES = document.createElement("a");
+		const CHARGESLINK = "charges";
+	const TINCTURES = document.createElement("a");
+		const TINCTURESLINK = "tinctures";
+	const DIVISIONS = document.createElement("a");
+		const DIVISIONSLINK = "divisions";
+	const ORDINARIES = document.createElement("a");
+		const ORDINARIESLINK = "ordinaries";
+	const POSITIONS = document.createElement("a");
+		const POSITIONSLINK = "positions";
+	const SHIELDS = document.createElement("a");
+		const SHIELDSLINK = "shields";
+
 const LANGFRIMG = document.createElement("img");
 const LANGENIMG = document.createElement("img");
 const LANGJAIMG = document.createElement("img");
+	HEAD.appendChild(TITLE);
+HTML.setAttribute("id", pagename);

@@ -72,7 +72,6 @@ header, footer, main{
 }
 header, footer{
 	margin: 0 10px;
-	background-color: #c0000060;
 }
 header{
 	position: fixed;
@@ -143,11 +142,14 @@ footer>div{
 	align-items: center;
 }
 nav{
-	display: flex;
 	height: 100%;
 	width: 90%;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+nav>ul>li{
+	position: relative;
 }
 i{
 	font-style: italic;
@@ -173,12 +175,33 @@ i{
 .flexrow{
 	flex-direction: row;
 }
-.threerow{
+.even{
 	width: 100%;
 	justify-content: space-evenly;
 }
 .margintop{
 	margin: 10px 0 0;
+}
+.sublist{
+	display: none;
+	position: absolute;
+	width: 125%;
+	box-sizing: border-box;
+	border-radius: 0 0 20px 20px;
+	justify-content: right;
+	padding-bottom: 0.5rem;
+	background-color: #c00000a0;
+	backdrop-filter: blur(10px);
+}
+.sublisthead:hover>.sublist, .sublist:hover{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+}
+.sublistitem{
+	display: block;
+	width: 80%;
+	margin: auto;
 }
 .snblock{
 	height:100%;
