@@ -314,6 +314,9 @@ i{
 	font-weight: 900;
 	text-shadow:0 0 5px #ffffffc0, 0 0 15px #ffffffc0;
 }
+.explainations{
+	font-size: 1.25rem;
+}
 /*IDs*/
 #logo{
 	display: block;
