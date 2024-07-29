@@ -28,20 +28,10 @@ html{
 	font-family: Designio;
 	font-weight: 400;
 	color: #ffffffff;
-	cursor: url(../img/technical/cursor.png), default;
+	cursor: url(../img/technical/cursor.svg), default;
 }
-a{
-	cursor: url(../img/technical/cursor.png), pointer;
-}
-header a, footer a{
-	cursor: url(../img/technical/cursor.png), pointer;
-	color:#fff080ff;
-	font-weight: 900;
-	text-shadow:0 0 15px #fff080ff;
-	transition-duration: 250ms;
-}
-a{
-	cursor: url(../img/technical/cursor.png), pointer;
+a, header a, footer a{
+	cursor: url(../img/technical/cursor.svg), pointer;
 	color:#fff080ff;
 	font-weight: 900;
 	text-shadow:0 0 15px #fff080ff;
@@ -55,6 +45,7 @@ small{
 }
 /*tags*/
 body{
+	cursor: url(../img/technical/cursor.svg), default;
 	background-color: #000000ff;
 	background-image: url(../img/technical/logo.svg);
 	background-repeat: no-repeat;
