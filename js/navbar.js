@@ -14,7 +14,6 @@ HEADERCONTENT.appendChild(HEADERMENU);
 	HEADERMENU.appendChild(ITEMCTCT);
 HEADERCONTENT.appendChild(LANGKIT);
 
-
 HEADERMENU.setAttribute("class", "flex even");
 ITEMPRES.setAttribute("class", "responsiveitem");
 ITEMHIST.setAttribute("class", "responsiveitem");
