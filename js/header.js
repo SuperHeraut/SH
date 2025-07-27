@@ -53,7 +53,6 @@ LANGKIT.setAttribute("id", "langmenu");
 LANGKITFR.appendChild(LANGFRIMG);
 LANGKITEN.appendChild(LANGENIMG);
 LANGKITJA.appendChild(LANGJAIMG);
-TITLE.innerHTML ="SuperHéraut";
 switch(langue){
 	case "fr":
 		CONTACT.innerHTML ="contact";

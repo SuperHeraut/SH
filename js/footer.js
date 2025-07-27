@@ -22,18 +22,21 @@ INSTABLOCK.setAttribute("class", "snlink");
 PIXIVBLOCK.setAttribute("class", "snlink");
 SN.appendChild(INSTABLOCK);
 SN.appendChild(PIXIVBLOCK);
-
-INSTAOFF.setAttribute("src", "../img/technical/ig-off.svg");
+if (pagename == "index"){INSTAOFF.setAttribute("src", "./img/technical/ig-off.svg");}
+else{INSTAOFF.setAttribute("src", "../img/technical/ig-off.svg");}
 INSTAOFF.setAttribute("class", "snpic off")
 INSTABLOCK.appendChild(INSTAOFF);
-INSTA.setAttribute("src", "../img/technical/ig.svg");
+if (pagename == "index"){INSTA.setAttribute("src", "./img/technical/ig.svg");}
+else{INSTA.setAttribute("src", "../img/technical/ig.svg");}
 INSTA.setAttribute("class", "snpic on");
 INSTABLOCK.appendChild(INSTA);
 
-PIXOFF.setAttribute("src", "../img/technical/p-off.svg");
+if (pagename == "index"){PIXOFF.setAttribute("src", "./img/technical/p-off.svg");}
+else{PIXOFF.setAttribute("src", "../img/technical/p-off.svg");}
 PIXOFF.setAttribute("class", "rspic off");
 PIXIVBLOCK.appendChild(PIXOFF);
-PIX.setAttribute("src", "../img/technical/p.svg");
+if (pagename == "index"){PIX.setAttribute("src", "./img/technical/p.svg");}
+else{PIX.setAttribute("src", "../img/technical/p.svg");}
 PIX.setAttribute("class", "rspic on");
 PIXIVBLOCK.appendChild(PIX);
 
