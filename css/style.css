@@ -24,27 +24,14 @@
 	font-weight: 900;
 	src: url(../fonts/ZenMaruGothic/ZenMaruGothic-Black.ttf);
 }
-html{
+/*tags*/
+html {
 	font-family: Designio;
 	font-weight: 400;
 	color: #ffffffff;
 	cursor: url(../img/technical/cursor.svg), default;
 }
-a, header a, footer a{
-	cursor: url(../img/technical/cursor.svg), pointer;
-	color:#fff080ff;
-	font-weight: 900;
-	text-shadow:0 0 15px #fff080ff;
-	transition-duration: 250ms;
-}
-.jtext{
-	font-family: ZenMaruGothic;
-}
-small{
-	font-size: smaller;
-}
-/*tags*/
-body{
+body {
 	cursor: url(../img/technical/cursor.svg), default;
 	background-color: #000000ff;
 	background-image: url(../img/technical/logo.svg);
@@ -56,15 +43,30 @@ body{
 	scroll-behavior: smooth;
 	color: #ffffffff;
 }
-header, footer, main{
+a,
+header a,
+footer a {
+	cursor: url(../img/technical/cursor.svg), pointer;
+	color: #fff080ff;
+	font-weight: 900;
+	text-shadow: 0 0 15px #fff080ff;
+	transition-duration: 250ms;
+}
+small {
+	font-size: smaller;
+}
+header,
+footer,
+main {
 	width: calc(100% - 20px);
 	box-sizing: border-box;
 	padding: 10px;
 }
-header, footer{
+header,
+footer {
 	margin: 0 10px;
 }
-header{
+header {
 	position: fixed;
 	top: 0;
 	display: flex;
@@ -75,47 +77,47 @@ header{
 	font-size: 2rem;
 	z-index: 99;
 }
-header>div{
+header>div {
 	text-align: center;
 }
-main{
+main {
 	margin: 100px 10px 70px;
 }
-h1{
+h1 {
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 900;
 	padding: 0.5rem;
 }
-h2{
+h2 {
 	font-size: 2.5rem;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
 	padding: 0.5rem;
 }
-h3{
+h3 {
 	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: 700;
 	padding: 0.25rem;
 }
-h4{
+h4 {
 	font-size: 1.75rem;
 	font-weight: 700;
 	padding: 0.125rem;
 }
-h5{
+h5 {
 	font-size: 1.5rem;
 	font-weight: 700;
 	padding: 0.0625rem;
 }
-h6{
+h6 {
 	font-size: 1.25rem;
 	font-weight: 700;
 }
-footer{
+footer {
 	position: fixed;
 	bottom: 0;
 	height: 65px;
@@ -123,7 +125,7 @@ footer{
 	font-size: 1.5rem;
 	font-weight: 700;
 }
-footer>div{
+footer>div {
 	height: 100%;
 	width: 100%;
 	padding: 0 5px;
@@ -132,48 +134,51 @@ footer>div{
 	justify-content: space-between;
 	align-items: center;
 }
-nav{
+nav {
 	height: 100%;
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-nav>ul>li{
+nav>ul>li {
 	position: relative;
 }
-i{
+i {
 	font-style: italic;
 }
 /*classes*/
-.blackblur{
+.jtext {
+	font-family: ZenMaruGothic;
+}
+.blackblur {
 	background-color: #00000060;
 	backdrop-filter: blur(10px);
 }
-.redblur{
+.redblur {
 	background-color: #c0000060;
 	backdrop-filter: blur(5px);
 }
-.blur{
+.blur {
 	backdrop-filter: blur(5px);
 }
-.flex{
+.flex {
 	display: flex;
 }
-.flexcol{
+.flexcol {
 	flex-direction: column;
 }
-.flexrow{
+.flexrow {
 	flex-direction: row;
 }
-.even{
+.even {
 	width: 100%;
 	justify-content: space-evenly;
 }
-.margintop{
+.margintop {
 	margin: 10px 0 0;
 }
-.sublist{
+.sublist {
 	display: none;
 	position: absolute;
 	width: 125%;
@@ -184,40 +189,41 @@ i{
 	background-color: #c00000a0;
 	backdrop-filter: blur(10px);
 }
-.sublisthead:hover>.sublist, .sublist:hover{
+.sublisthead:hover>.sublist,
+.sublist:hover {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
 }
-.sublistitem{
+.sublistitem {
 	display: block;
 	width: 80%;
 	margin: auto;
 }
-.snblock{
-	height:100%;
+.snblock {
+	height: 100%;
 	align-items: center;
 }
-.snlink{
+.snlink {
 	display: block;
 	position: relative;
-	height:100%;
+	height: 100%;
 	width: 45px;
 	margin: 0 2px;
 }
-.snlink>*{
+.snlink>* {
 	height: 100%;
 }
-.snlink img{
+.snlink img {
 	position: absolute;
 }
-.langicon{
+.langicon {
 	height: 70px;
 }
-.nodisp{
+.nodisp {
 	display: none;
 }
-.box{
+.box {
 	display: flex;
 	flex-direction: column;
 	width: 20%;
@@ -227,209 +233,245 @@ i{
 	box-sizing: border-box;
 	align-self: flex-start;
 }
-.box>.fullarms{
+.box>.fullarms {
 	max-width: 100%;
 	max-height: 300px;
 	margin: auto;
 }
-.box>.escutcheon{
+.box>.escutcheon {
 	max-width: 60%;
 	max-height: 200px;
 	margin: auto;
 }
-.box>span{
+.box>span {
 	padding: 0.5rem 0 0;
 	font-size: 1.5rem;
 	font-weight: 100;
 }
-.fullwidth{
+.fullwidth {
 	width: 100%;
 }
-.gules{
-	color:#ffa0a0ff;
+.gules {
+	color: #ffa0a0ff;
 	font-weight: 900;
-	text-shadow:0 0 5px #ff0808ff, 0 0 15px #ff0808ff;
+	text-shadow: 0 0 5px #ff0808ff, 0 0 15px #ff0808ff;
 }
-.azure{
-	color:#a0c0ffff;
+.azure {
+	color: #a0c0ffff;
 	font-weight: 900;
-	text-shadow:0 0 5px #0860ffff, 0 0 15px #0860ffff;
+	text-shadow: 0 0 5px #0860ffff, 0 0 15px #0860ffff;
 }
-.sable{
-	color:#000000ff;
+.sable {
+	color: #000000ff;
 	font-weight: 900;
-	text-shadow:0 0 5px #ffffffff, 0 0 15px #ffffffff;
+	text-shadow: 0 0 5px #ffffffff, 0 0 15px #ffffffff;
 }
-.vert{
-	color:#a0ffa0ff;
+.vert {
+	color: #a0ffa0ff;
 	font-weight: 900;
-	text-shadow:0 0 5px #40ff40ff, 0 0 15px #40ff40ff;
+	text-shadow: 0 0 5px #40ff40ff, 0 0 15px #40ff40ff;
 }
-.purpure{
-	color:#ffc0ffff;
+.purpure {
+	color: #ffc0ffff;
 	font-weight: 900;
-	text-shadow:0 0 5px #ff60ffff, 0 0 15px #ff60ffff;
+	text-shadow: 0 0 5px #ff60ffff, 0 0 15px #ff60ffff;
 }
-.sanguine{
-	color:#e08080ff;
+.sanguine {
+	color: #e08080ff;
 	font-weight: 900;
-	text-shadow:0 0 5px #ff0808c0, 0 0 15px #ff0808c0;
+	text-shadow: 0 0 5px #ff0808c0, 0 0 15px #ff0808c0;
 }
-.tawny{
-	color:#ffd8a0e0;
+.tawny {
+	color: #ffd8a0e0;
 	font-weight: 900;
-	text-shadow:0 0 5px #ffc008c0, 0 0 15px #ffc008c0;
+	text-shadow: 0 0 5px #ffc008c0, 0 0 15px #ffc008c0;
 }
-.orange{
-	color:#ffc0a0ff;
+.orange {
+	color: #ffc0a0ff;
 	font-weight: 900;
-	text-shadow:0 0 5px #ff8008ff, 0 0 15px #ff8008ff;
+	text-shadow: 0 0 5px #ff8008ff, 0 0 15px #ff8008ff;
 }
-.steel{
+.steel {
 	color: #c0c0c0ff;
 	font-weight: 900;
-	text-shadow:0 0 5px #a0a0a0ff, 0 0 15px #a0a0a0ff;
+	text-shadow: 0 0 5px #a0a0a0ff, 0 0 15px #a0a0a0ff;
 }
-.murrey{
-	color:#e080c0ff;
+.murrey {
+	color: #e080c0ff;
 	font-weight: 900;
-	text-shadow:0 0 5px #a03080ff, 0 0 15px #a03080ff;
+	text-shadow: 0 0 5px #a03080ff, 0 0 15px #a03080ff;
 }
-.or{
-	color:#ffe0c0ff;
+.or {
+	color: #ffe0c0ff;
 	font-weight: 900;
-	text-shadow:0 0 5px #ffc000ff, 0 0 15px #ffc000ff;
+	text-shadow: 0 0 5px #ffc000ff, 0 0 15px #ffc000ff;
 }
-.argent{
-	color:#ffffffff;
+.argent {
+	color: #ffffffff;
 	font-weight: 900;
-	text-shadow:0 0 5px #ffffffc0, 0 0 15px #ffffffc0;
+	text-shadow: 0 0 5px #ffffffc0, 0 0 15px #ffffffc0;
 }
-.explainations{
+.explainations {
 	font-size: 1.25rem;
 }
 /*IDs*/
-#logo{
+#starter {
+	background-color: #a0000080;
+	backdrop-filter: blur(5px);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: sticky;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	font-size: 1.5rem;
+	height: 93vh;
+}
+#starter>div {
+	justify-self: center;
+	margin: auto;
+	color: #fffc8080;
+	font-size: 10vw;
+	font-weight: 200;
+	transition-duration: 750ms;
+}
+#starter>div:active {
+	color: #fffc80ff;
+	font-weight: 900;
+	text-shadow: #ffc000ff 0 0 7px;
+	transition-duration: 500ms;
+}
+#logo {
 	display: block;
 	height: 100%;
 	margin-left: 10px;
 }
-#logo>img{
+#logo>img {
 	height: 100%;
 }
-#nopage{
+#nopage {
 	background-image: none;
 	color: #ffffffff;
 }
-#defaultpage{
+#defaultpage {
 	display: flex;
 	min-height: calc(100vh - 175px);
 	margin: 100px 10px 10px;
 	border-radius: 20px;
 	font-size: 5rem;
 	text-align: center;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	flex-direction: column;
 	justify-content: space-around;
 	background-color: #c0000060;
 	color: #ffc00080;
 }
-#defaultpage>*{
+#defaultpage>* {
 	width: 100%;
 	font-size: 7vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
-#defaultpage div{
+#defaultpage div {
 	animation: animate 3s linear infinite;
-	height:fit-content;
+	height: fit-content;
 }
-#defaultpage div>*{
+#defaultpage div>* {
 	animation: animate 3s linear infinite;
-	height:100%;
+	height: 100%;
 }
-#fourOfour{
+#fourOfour {
 	font-size: 40vw;
 }
-#landingpage{
+#landingpage {
 	display: flex;
 	min-height: calc(100vh - 85px);
 	margin: 10px;
 	border-radius: 20px;
 	text-align: center;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	flex-direction: column;
 	justify-content: space-evenly;
 	background-color: #c0000060;
 	color: #ffc00080;
 	font-size: 7vw;
 }
-#langmenu{
+#langmenu {
 	right: 0;
 	display: flex;
 	width: 140px;
 	justify-content: space-between;
 }
 @keyframes animate {
-	0%,100% {
-		color:#fff08040;
-		text-shadow:none;
+	0%,
+	100% {
+		color: #fff08040;
+		text-shadow: none;
 	}
-	15%,85% {
-		color:#fff08080;
-		text-shadow:none;
-		text-shadow:0 0 5px #ffc00040;
+	15%,
+	85% {
+		color: #fff08080;
+		text-shadow: none;
+		text-shadow: 0 0 5px #ffc00040;
 	}
 	50% {
-		color:#fff080ff;
-		text-shadow:0 0 5px #ffc000ff,
-						0 0 15px #ffc000ff,
-						0 0 35px #ffc000a0,
-						0 0 75px #ffc00080;
+		color: #fff080ff;
+		text-shadow: 0 0 5px #ffc000ff,
+			0 0 15px #ffc000ff,
+			0 0 35px #ffc000a0,
+			0 0 75px #ffc00080;
 	}
 }
-@media screen and (min-width:768px){
-	header a, footer a{
-		color:#ffc00080;
+@media screen and (min-width:768px) {
+	header a,
+	footer a {
+		color: #ffc00080;
 		transition-duration: 1000ms;
 		font-weight: 400;
-		text-shadow:none;
+		text-shadow: none;
 	}
-	header a:hover, footer a:hover{
-		color:#fff080ff;
+	header a:hover,
+	footer a:hover {
+		color: #fff080ff;
 		font-weight: 900;
-		text-shadow:0 0 15px #fff080ff;
+		text-shadow: 0 0 15px #fff080ff;
 		transition-duration: 250ms;
 	}
-	a{
-		color:#ffc000a0;
+	a {
+		color: #ffc000a0;
 		transition-duration: 750ms;
 		font-weight: 400;
-		text-shadow:none;
+		text-shadow: none;
 	}
-	a:hover{
-		color:#fff080ff;
+	a:hover {
+		color: #fff080ff;
 		font-weight: 900;
-		text-shadow:0 0 15px #fff080ff;
+		text-shadow: 0 0 15px #fff080ff;
 		transition-duration: 250ms;
 	}
-	#landingPage>*{
+	#landingPage>* {
 		font-size: 4vw;
 	}
-	#fourOfour{
+	#fourOfour {
 		font-size: 20vw;
 	}
-	#active{
-		color:#ffa0a0ff;
+	#active {
+		color: #ffa0a0ff;
 		font-weight: 400;
-		text-shadow:0 0 15px #ff0000ff;
+		text-shadow: 0 0 15px #ff0000ff;
 	}
-	.on{
+	.on {
 		opacity: 0;
 		transition-duration: 1000ms;
 	}
-	.off:hover~.on, .on:hover{
+	.off:hover~.on,
+	.on:hover {
 		opacity: 100%;
 		transition-duration: 500ms;
 	}
