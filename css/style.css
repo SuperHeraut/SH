@@ -151,16 +151,43 @@ i {
 .jtext {
 	font-family: ZenMaruGothic;
 }
+.vertext {
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
 .blackblur {
 	background-color: #00000060;
 	backdrop-filter: blur(10px);
 }
+.darkblackblur {
+	background-color: #000000a0;
+	backdrop-filter: blur(10px);
+}
 .redblur {
 	background-color: #c0000060;
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(10px);
+}
+.darkredblur {
+	background-color: #800000a0;
+	backdrop-filter: blur(10px);
 }
 .blur {
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(10px);
+}
+.blink {
+	animation: blink 2s linear infinite;
+}
+.blinklong {
+	animation: blinklong 5s linear infinite;
+}
+.blinklongalt1 {
+	animation: blinklongalt1 5s linear infinite;
+}
+.blinklongalt2 {
+	animation: blinklongalt2 5s linear infinite;
+}
+.blinklongalt2textgold {
+	animation: blinklongalt2textgold 5s linear infinite;
 }
 .flex {
 	display: flex;
@@ -186,8 +213,6 @@ i {
 	border-radius: 0 0 20px 20px;
 	justify-content: right;
 	padding-bottom: 0.5rem;
-	background-color: #c00000a0;
-	backdrop-filter: blur(10px);
 }
 .sublisthead:hover>.sublist,
 .sublist:hover {
@@ -316,8 +341,6 @@ i {
 }
 /*IDs*/
 #starter {
-	background-color: #a0000080;
-	backdrop-filter: blur(5px);
 	padding: 10px;
 	margin: 10px;
 	border-radius: 20px;
@@ -330,13 +353,13 @@ i {
 	text-transform: uppercase;
 	top: 0;
 	font-size: 1.5rem;
-	height: 93vh;
+	height: calc(100vh - 85px);
 }
 #starter>div {
 	justify-self: center;
 	margin: auto;
 	color: #fffc8080;
-	font-size: 10vw;
+	font-size: 9vw;
 	font-weight: 200;
 	transition-duration: 750ms;
 }
@@ -358,18 +381,20 @@ i {
 	background-image: none;
 	color: #ffffffff;
 }
-#defaultpage {
-	display: flex;
-	min-height: calc(100vh - 175px);
+#defaultpage,
+#workpage {
+	height: calc(100vh - 175px);
 	margin: 100px 10px 10px;
 	border-radius: 20px;
+	color: #ffc00080;
+}
+#defaultpage {
+	display: flex;
 	font-size: 5rem;
 	text-align: center;
 	text-transform: uppercase;
 	flex-direction: column;
 	justify-content: space-around;
-	background-color: #c0000060;
-	color: #ffc00080;
 }
 #defaultpage>* {
 	width: 100%;
@@ -386,6 +411,27 @@ i {
 	animation: animate 3s linear infinite;
 	height: 100%;
 }
+#workpage {
+	position: relative;
+	backdrop-filter: blur(10px);
+}
+#workpage>* {
+	position: absolute;
+	max-height: 99%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+#workpage>p {
+	display: inline-block;
+	width: fit-content;
+	height: fit-content;
+	text-align: center;
+	padding: auto;
+	text-transform: uppercase;
+	font-size: 5rem;
+	word-wrap: none;
+}
 #fourOfour {
 	font-size: 40vw;
 }
@@ -398,7 +444,6 @@ i {
 	text-transform: uppercase;
 	flex-direction: column;
 	justify-content: space-evenly;
-	background-color: #c0000060;
 	color: #ffc00080;
 	font-size: 7vw;
 }
@@ -417,10 +462,92 @@ i {
 	15%,
 	85% {
 		color: #fff08080;
-		text-shadow: none;
 		text-shadow: 0 0 5px #ffc00040;
 	}
 	50% {
+		color: #fff080ff;
+		text-shadow: 0 0 5px #ffc000ff,
+			0 0 15px #ffc000ff,
+			0 0 35px #ffc000a0,
+			0 0 75px #ffc00080;
+	}
+}
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	15%,
+	85% {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+@keyframes blinklong {
+	0%,
+	5%,
+	95%,
+	100% {
+		opacity: 0;
+	}
+	25%,
+	75% {
+		opacity: 0.5;
+	}
+	40%,
+	60% {
+		opacity: 1;
+	}
+}
+@keyframes blinklongalt1 {
+	0%,
+	10%,
+	100% {
+		opacity: 1;
+	}
+	30%,
+	80% {
+		opacity: 0.5;
+	}
+	50%,
+	60% {
+		opacity: 0;
+	}
+}
+@keyframes blinklongalt2 {
+	0%,
+	10% {
+		opacity: 0;
+	}
+	30%,
+	80% {
+		opacity: 0.5;
+	}
+	50%,
+	60% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes blinklongalt2textgold {
+	0%,
+	12%,
+	100% {
+		font-weight: 600;
+		color: #fff08000;
+		text-shadow: none;
+	}
+	28%,
+	82% {
+		color: #fff08080;
+		text-shadow: 0 0 5px #ffc00040;
+	}
+	51%,
+	59% {
 		color: #fff080ff;
 		text-shadow: 0 0 5px #ffc000ff,
 			0 0 15px #ffc000ff,
