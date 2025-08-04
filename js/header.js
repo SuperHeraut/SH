@@ -25,7 +25,7 @@ ITEMHIST.appendChild(HISTORY);
 ITEMARMR.appendChild(GALLERY);
 ITEMRSRC.appendChild(RESOURCES);
 ITEMRSRC.appendChild(RESOURCESLIST);
-	RESOURCESLIST.setAttribute("class", "sublist");
+	RESOURCESLIST.setAttribute("class", "sublist redblur");
 	RESOURCESLIST.appendChild(ITEMSHIELDS);
 	RESOURCESLIST.appendChild(ITEMTINCTURES);
 	RESOURCESLIST.appendChild(ITEMDIVISIONS);

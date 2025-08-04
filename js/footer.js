@@ -8,7 +8,7 @@ FOOTERCONTENT.appendChild(COPYRIGHT);
 
 cond = document.createElement("a");
 FOOTERCONTENT.appendChild(cond);
-cond.setAttribute("href", "../cgu-cgv.html");
+cond.setAttribute("href", "./legalnotice.html");
 
 SN.setAttribute("class", "snblock flex")
 FOOTERCONTENT.appendChild(SN);
