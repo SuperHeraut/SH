@@ -105,8 +105,8 @@ switch(langue){
 		TINCTURES.innerHTML ="色";
 		DIVISIONS.innerHTML ="分割";
 		POSITIONS.innerHTML ="位置";
-		ORDINARIES.innerHTML ="オーディナリー";
-		CHARGES.innerHTML ="チャージ";
+		ORDINARIES.innerHTML ="ｵｰﾃ゙ｨﾅﾘｰ";
+		CHARGES.innerHTML ="ﾁｬｰｼﾞ";
 		LANGKITJA.setAttribute("class", "nodisp");
 		LANGKITFR.setAttribute("href", "../fr/" + pagename + ".html");
 		LANGKITEN.setAttribute("href", "../en/" + pagename + ".html");
