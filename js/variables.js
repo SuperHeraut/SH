@@ -88,6 +88,8 @@ let cond;
 let socNet;
 if (pagename == 404){
 	pagename = "nopage";
+} else if (pagename == undefined){
+	pagename = "index";
 }
 if (langue == "default"){
 	langue = "zxx";
