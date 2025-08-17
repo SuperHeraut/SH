@@ -82,6 +82,7 @@ const LANGJAIMG = document.createElement("img");
 //variabless
 
 let pagename = PAGELOC[0];
+console.log(pagename);
 let langue = PAGELINK[PAGELINK.length - 2];
 let page = document.querySelector("html").getAttribute("id");
 let cond;
