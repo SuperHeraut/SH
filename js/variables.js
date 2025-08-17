@@ -88,7 +88,7 @@ let cond;
 let socNet;
 if (pagename == 404){
 	pagename = "nopage";
-} else if (pagename == undefined){
+} else if (pagename == "SH"){
 	pagename = "index";
 }
 if (langue == "default"){
