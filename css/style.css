@@ -208,7 +208,7 @@ i {
 .sublist {
 	display: none;
 	position: absolute;
-	width: 125%;
+	width: 180px;
 	box-sizing: border-box;
 	border-radius: 0 0 20px 20px;
 	justify-content: right;
