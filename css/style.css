@@ -147,6 +147,21 @@ nav>ul>li {
 i {
 	font-style: italic;
 }
+input {
+	border: none;
+	border-radius: 50px;
+	box-sizing: border-box;
+	padding: 0.5rem;
+	font-family: Designio;
+	font-size: 1rem;
+}
+input[type="text"] {
+	background-color: #ffffff20;
+}
+input[type="submit"] {
+	background-color: #ffffff40;
+	text-align: center;
+}
 /*classes*/
 .jtext {
 	font-family: ZenMaruGothic;
@@ -275,6 +290,9 @@ i {
 }
 .fullwidth {
 	width: 100%;
+}
+.halfwidth {
+	width: 50%;
 }
 .gules {
 	color: #ffa0a0ff;
