@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.37829128"
-     inkscape:cx="400.48504"
-     inkscape:cy="17.182527"
+     inkscape:zoom="0.53498466"
+     inkscape:cx="359.8234"
+     inkscape:cy="350.47734"
      inkscape:document-units="px"
      inkscape:current-layer="g17494"
      showgrid="false"
@@ -14153,6 +14153,10 @@
           </g>
         </g>
       </g>
+      <path
+         style="fill:#99ddff;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100000"
+         d="m -3778.532,-3162.1971 v 1361.3848"
+         id="path1" />
     </g>
   </g>
 </svg>
