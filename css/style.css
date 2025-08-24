@@ -162,6 +162,7 @@ input[type="submit"] {
 	background-color: #ffffff40;
 	text-align: center;
 }
+
 /*classes*/
 .jtext {
 	font-family: ZenMaruGothic;
@@ -203,6 +204,27 @@ input[type="submit"] {
 }
 .blinklongalt2textgold {
 	animation: blinklongalt2textgold 5s linear infinite;
+}
+.hover {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: fit-content;
+}
+.hoveroff,
+.hoveron {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.hoveron {
+	display: none;
+	transition-duration: 2000ms;
+}
+.hoveroff:hover~.hoveron,
+.hoveron:hover {
+	display: block;
+	transition-duration: 2000ms;
 }
 .flex {
 	display: flex;
@@ -357,6 +379,7 @@ input[type="submit"] {
 .explainations {
 	font-size: 1.25rem;
 }
+
 /*IDs*/
 #starter {
 	padding: 10px;
@@ -470,6 +493,9 @@ input[type="submit"] {
 	display: flex;
 	width: 140px;
 	justify-content: space-between;
+}
+#mail {
+	height: 500px;
 }
 @keyframes animate {
 	0%,
