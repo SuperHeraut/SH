@@ -166,6 +166,10 @@ input[type="submit"] {
 	background-color: #ffffff40;
 	text-align: center;
 }
+sup {
+	font-size: 0.75em;
+	vertical-align: super;
+}
 
 /*classes*/
 .jtext {
