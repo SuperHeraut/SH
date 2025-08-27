@@ -1,31 +1,31 @@
 
 let indexPic = 0;
-const pic = document.querySelectorAll('#armorial div img');
-const totalPic = pic.length;
-const gallery = document.getElementById("gallery")
+const PIC = document.querySelectorAll('#rollofarms div img');
+const TOTALPIC = PIC.length;
+const GALLERY = document.getElementById("gallery")
 
 const openGallery = (event) => {
     if (event.target.localName === "img") {
-        const clickIndex = Array.from(pic).indexOf(event.target);
-        indexPic = clickIndex;
-        gallery.style.display = "flex";
-        gallery.style.opacity = "1";
+        const CLICKINDEX = Array.from(PIC).indexOf(event.target);
+        indexPic = CLICKINDEX;
+        GALLERY.style.display = "flex";
+        GALLERY.style.opacity = "1";
         updateGallery();
     }
 }
 
 const closeGallery = () => {
-    gallery.style.display = "none";
-    gallery.style.transition = "opacity 2000ms ease-in-out, visibility 2000ms ease-in-out";
+    GALLERY.style.display = "none";
+    GALLERY.style.transition = "opacity 2000ms ease-in-out, visibility 2000ms ease-in-out";
 
 }
 
 const changePic = (direction) => {
     indexPic += direction;
-    if (indexPic >= totalPic) {
+    if (indexPic >= TOTALPIC) {
         indexPic = 0;
     } else if (indexPic < 0) {
-        indexPic = totalPic - 1;
+        indexPic = TOTALPIC - 1;
     }
     updateGallery();
 }
@@ -34,10 +34,10 @@ const updateGallery = () => {
     const galMainPic = document.getElementById("galMainPic");
     const thumbCont = document.getElementById("thumbCont");
 
-    galMainPic.src = pic[indexPic].src;
+    galMainPic.src = PIC[indexPic].src;
     thumbCont.innerHTML = "";
 
-    pic.forEach((image, index) => {
+    PIC.forEach((image, index) => {
         const thumb = document.createElement("img");
         thumb.src = image.src;
         thumb.alt = `Thumbnail ${index + 1}`;
