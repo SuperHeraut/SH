@@ -1,8 +1,5 @@
 
-let indexPic = 0;
-const PIC = document.querySelectorAll('#rollofarms div img');
-const TOTALPIC = PIC.length;
-const GALLERY = document.getElementById("gallery")
+indexPic = 0;
 
 const openGallery = (event) => {
     if (event.target.localName === "img") {

@@ -16,4 +16,4 @@ BODY.appendChild(VARS);
 BODY.appendChild(HDS);
 BODY.appendChild(HDR);
 BODY.appendChild(FTR);
-BODY.appendChild(MOD);
+// BODY.appendChild(MOD);

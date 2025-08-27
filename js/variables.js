@@ -32,7 +32,7 @@ const SN = document.createElement("div");
 const INSTABLOCK = document.createElement("a");
 const PIXIVBLOCK = document.createElement("a");
 const CONTACT = document.createElement("a");
-const GALLERY = document.createElement("a");
+const ROLLOFARMS = document.createElement("a");
 const HISTORY = document.createElement("a");
 const PRESENTATION = document.createElement("a");
 
@@ -44,7 +44,7 @@ const PIXOFF = document.createElement("img");
 const PIX = document.createElement("img");
 
 const CONTACTLINK = "contact";
-const GALLERYLINK = "gallery";
+const ROLLOFARMSLINK = "rollofarms";
 const HISTORYLINK = "history";
 const PRESENTATIONLINK = "presentation";
 const RESOURCESLINK = "resources";
@@ -75,24 +75,34 @@ const RESOURCESLIST = document.createElement("ul");
 	const SHIELDS = document.createElement("a");
 	const SHIELDSLINK = "shields";
 
-const LANGFRIMG = document.createElement("img");
-const LANGENIMG = document.createElement("img");
-const LANGJAIMG = document.createElement("img");
 
-//variabless
+//variables
 
 let pagename = PAGELOC[0];
 let langue = PAGELINK[PAGELINK.length - 2];
 let page = document.querySelector("html").getAttribute("id");
 let cond;
 let socNet;
+let indexPic;
 if (pagename == 404){
 	pagename = "nopage";
 } else if (pagename == ""){
 	pagename = "index";
+}
+if (pagename == "rollofarms"){
+	const ROA = document.createElement("script");
+	ROA.setAttribute("src", "../js/gallery.js");
+	BODY.appendChild(ROA);
 }
 if (langue == "default"){
 	langue = "zxx";
 };
 	HEAD.appendChild(TITLE);
 HTML.setAttribute("id", pagename);
+
+const LANGFRIMG = document.createElement("img");
+const LANGENIMG = document.createElement("img");
+const LANGJAIMG = document.createElement("img");
+const PIC = document.querySelectorAll('#rollofarms div img');
+const TOTALPIC = PIC.length;
+const GALLERY = document.getElementById("gallery")

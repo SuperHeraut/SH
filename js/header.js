@@ -22,7 +22,7 @@ ITEMRSRC.setAttribute("class", "responsiveitem sublisthead");
 ITEMCTCT.setAttribute("class", "responsiveitem");
 ITEMPRES.appendChild(PRESENTATION);
 ITEMHIST.appendChild(HISTORY);
-ITEMARMR.appendChild(GALLERY);
+ITEMARMR.appendChild(ROLLOFARMS);
 ITEMRSRC.appendChild(RESOURCES);
 ITEMRSRC.appendChild(RESOURCESLIST);
 	RESOURCESLIST.setAttribute("class", "sublist redblur");
@@ -56,7 +56,7 @@ LANGKITJA.appendChild(LANGJAIMG);
 switch(langue){
 	case "fr":
 		CONTACT.innerHTML ="contact";
-		GALLERY.innerHTML ="armorial";
+		ROLLOFARMS.innerHTML ="armorial";
 		HISTORY.innerHTML ="histoire";
 		PRESENTATION.innerHTML ="pr&eacute;sentation";
 		RESOURCES.innerHTML ="ressources";
@@ -76,7 +76,7 @@ switch(langue){
 		break;
 	case "en":
 		CONTACT.innerHTML ="contact";
-		GALLERY.innerHTML ="roll of arms";
+		ROLLOFARMS.innerHTML ="roll of arms";
 		HISTORY.innerHTML ="history";
 		PRESENTATION.innerHTML ="presentation";
 		RESOURCES.innerHTML ="resources";
@@ -97,7 +97,7 @@ switch(langue){
 	case "ja":
 		HEADER.setAttribute("class", "jtext");
 		CONTACT.innerHTML ="連絡";
-		GALLERY.innerHTML ="紋章集";
+		ROLLOFARMS.innerHTML ="紋章集";
 		HISTORY.innerHTML ="歴史";
 		PRESENTATION.innerHTML ="紋章とは";
 		RESOURCES.innerHTML ="資源物";
@@ -119,7 +119,7 @@ switch(langue){
 switch(pagename){
 	case CONTACTLINK:
 		CONTACT.setAttribute("id", "active");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -130,9 +130,9 @@ switch(pagename){
 		POSITIONS.setAttribute("href", "../" + langue + "/" + POSITIONSLINK + ".html");
 		SHIELDS.setAttribute("href", "../" + langue + "/" + SHIELDSLINK + ".html");
 		break;
-	case GALLERYLINK:
+	case ROLLOFARMSLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("id", "active");
+		ROLLOFARMS.setAttribute("id", "active");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -145,7 +145,7 @@ switch(pagename){
 		break;
 	case HISTORYLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("id", "active");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -158,7 +158,7 @@ switch(pagename){
 		break;
 	case PRESENTATIONLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("id", "active");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -171,7 +171,7 @@ switch(pagename){
 		break;
 	case RESOURCESLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("id", "active");
@@ -184,7 +184,7 @@ switch(pagename){
 		break;
 	case CHARGESLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -197,7 +197,7 @@ switch(pagename){
 		break;
 	case TINCTURESLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -210,7 +210,7 @@ switch(pagename){
 		break;
 	case DIVISIONSLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -223,7 +223,7 @@ switch(pagename){
 		break;
 	case ORDINARIESLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -236,7 +236,7 @@ switch(pagename){
 		break;
 	case POSITIONSLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -249,7 +249,7 @@ switch(pagename){
 		break;
 	case SHIELDSLINK:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
@@ -262,7 +262,7 @@ switch(pagename){
 		break;
 	default:
 		CONTACT.setAttribute("href", "../" + langue + "/" + CONTACTLINK + ".html");
-		GALLERY.setAttribute("href", "../" + langue + "/" + GALLERYLINK + ".html");
+		ROLLOFARMS.setAttribute("href", "../" + langue + "/" + ROLLOFARMSLINK + ".html");
 		HISTORY.setAttribute("href", "../" + langue + "/" + HISTORYLINK + ".html");
 		PRESENTATION.setAttribute("href", "../" + langue + "/" + PRESENTATIONLINK + ".html");
 		RESOURCES.setAttribute("href", "../" + langue + "/" + RESOURCESLINK + ".html");
