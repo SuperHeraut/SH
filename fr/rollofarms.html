@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<!-- <script>window.location.href = "./construction.html";</script> -->
+	<header></header>
+<main>
+		<div class="titre2">portfolio</div>
+		<section class="flex blur" onclick="openGallery(event)" id="rollofarms">
+			<div class="arms">
+				<img src="../img/ressources/rollofarms/Anjou-DeuxSiciles.svg" alt="">
+			</div>
+		</section>
+
+		<div id="gallery" class="blur">
+
+			<div id="closeGal">
+				<img src="../img/technical/close-off.svg" id="closeoff">
+				<img src="../img/technical/close.svg" id="closeon" onclick="closeGallery()">
+			</div>
+
+			<img id="galMainPic" src="" alt="gallery pic">
+			<div id="thumbCont">
+			</div>
+
+			<div class="arrowbox" id="leftGal">
+				<div class="arrow">
+					<div class="arrowoff">
+						<img src="../img/technical/leftarrow-off.svg" alt="prev">
+					</div>
+					<div class="arrowon">
+						<img src="../img/technical/leftarrow.svg" alt="prev" onclick="changePic(-1)">
+					</div>
+				</div>
+			</div>
+
+			<div class="arrowbox" id="rightGal">
+				<div class="arrow">
+					<div class="arrowoff">
+						<img src="../img/technical/rightarrow-off.svg" alt="next">
+					</div>
+					<div class="arrowon">
+						<img src="../img/technical/rightarrow.svg" alt="next" onclick="changePic(1)">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<footer></footer>
+	<script src="../js/script.js"></script>
+</body>
+</html>
