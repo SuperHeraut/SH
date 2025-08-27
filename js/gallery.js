@@ -31,20 +31,20 @@ const changePic = (direction) => {
 }
 
 const updateGallery = () => {
-    const galMainPic = document.getElementById("galMainPic");
-    const thumbCont = document.getElementById("thumbCont");
+    const GALMAINPIC = document.getElementById("galMainPic");
+    const THUMBCONT = document.getElementById("thumbCont");
 
-    galMainPic.src = PIC[indexPic].src;
-    thumbCont.innerHTML = "";
+    GALMAINPIC.src = PIC[indexPic].src;
+    THUMBCONT.innerHTML = "";
 
     PIC.forEach((image, index) => {
-        const thumb = document.createElement("img");
-        thumb.src = image.src;
-        thumb.alt = `Thumbnail ${index + 1}`;
-        thumb.classList.add("thumb");
-        thumb.addEventListener("click", () => updateMainPic(index));
-        thumbCont.appendChild(thumb);
-        thumb.src = image.src;
+        const THUMB = document.createElement("img");
+        THUMB.src = image.src;
+        THUMB.alt = `Thumbnail ${index + 1}`;
+        THUMB.classList.add("thumb");
+        THUMB.addEventListener("click", () => updateMainPic(index));
+        THUMBCONT.appendChild(THUMB);
+        THUMB.src = image.src;
     });
 
     const thumbnails = document.querySelectorAll(".thumb");
