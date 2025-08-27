@@ -103,6 +103,6 @@ HTML.setAttribute("id", pagename);
 const LANGFRIMG = document.createElement("img");
 const LANGENIMG = document.createElement("img");
 const LANGJAIMG = document.createElement("img");
-const PIC = document.querySelectorAll('#rollofarms div img');
+const PIC = document.querySelectorAll('#rollofarms>div>img');
 const TOTALPIC = PIC.length;
 const GALLERY = document.getElementById("gallery")
