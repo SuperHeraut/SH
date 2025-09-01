@@ -24,6 +24,21 @@
 	font-weight: 900;
 	src: url(../fonts/ZenMaruGothic/ZenMaruGothic-Black.ttf);
 }
+@font-face {
+	font-family: Designio;
+	font-weight: 400;
+	src: url(../fonts/Designio/DesignioRegular.otf);
+}
+@font-face {
+	font-family: Designio;
+	font-weight: 500;
+	src: url(../fonts/Designio/DesignioMedium.otf);
+}
+@font-face {
+	font-family: Designio;
+	font-weight: 700;
+	src: url(../fonts/Designio/DesignioBold.otf);
+}
 /*tags*/
 html {
 	font-family: Designio;
