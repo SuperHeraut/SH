@@ -82,6 +82,7 @@ let pagename = PAGELOC[0];
 let langue = PAGELINK[PAGELINK.length - 2];
 let page = document.querySelector("html").getAttribute("id");
 let cond;
+let prices;
 let socNet;
 let indexPic;
 if (pagename == 404){
