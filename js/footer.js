@@ -8,7 +8,7 @@ FOOTERCONTENT.appendChild(COPYRIGHT);
 
 prices = document.createElement("a");
 FOOTERCONTENT.appendChild(prices);
-prices.setAttribute("href", "./formulas.html");
+prices.setAttribute("href", "./offers.html");
 
 cond = document.createElement("a");
 FOOTERCONTENT.appendChild(cond);
