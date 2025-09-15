@@ -228,6 +228,9 @@ sup {
 .blinklongalt2textgold {
 	animation: blinklongalt2textgold 5s linear infinite;
 }
+.centertext {
+	text-align: center;
+}
 .hover {
 	position: relative;
 	display: flex;
